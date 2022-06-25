@@ -34,7 +34,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '18.233.157.145']
 
 
 # Application definition
@@ -129,10 +129,9 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-STATIC_URL = 'static/'
-
+# https://docs.djangoproject.com/en/4.0/howto/static-file
+STATIC_URL = '/static/'
+STATIC_ROOT = "/var/www/skilljob.com/static"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

@@ -16,7 +16,11 @@ DB_PORT=5432
 AWS_ACCESS_KEY=key
 AWS_SECRET_KEY=secret
 ```
-5. After this run migration
+5. Create a new venv and activate your virtual environment
+6. Install all the requirements 
+``pip install -r requirements.txt``
+7. After this run migration
 ``./manage.py migrate``
-6. Create a super user in your local to acess admin panel
+8. Create a super user in your local to access admin panel
 `` ./manage.py createsuperuser``
+9. Run the app using ``./manage.py runserver``
